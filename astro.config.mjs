@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'SyncmaticaLand API Docs',
 			defaultLocale: 'root',
 			locales: {
 				en: {
@@ -17,12 +17,20 @@ export default defineConfig({
 					lang: 'zh-CN',
 				},
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Prime-Light/SyncmaticaLand.Docs' }],
 			sidebar: [
+				{
+					label: 'Start Here',
+					translations: {
+						'zh-CN': '从这里开始',
+					},
+					items: [
+						'welcome',
+					],
+				},
 				{
 					label: 'Guides',
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
 					],
 				},
